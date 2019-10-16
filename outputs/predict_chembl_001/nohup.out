@@ -1,0 +1,27 @@
+nohup: ignoring input
+2019-10-16 13:08:27.360458: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-10-16 13:08:27.515109: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-16 13:08:27.516046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:06:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2019-10-16 13:08:27.516060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2019-10-16 13:08:27.736028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-16 13:08:27.736071: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2019-10-16 13:08:27.736077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2019-10-16 13:08:27.736318: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10407 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:06:00.0, compute capability: 6.1)
+[13:09:05] Can't kekulize mol.  Unkekulized atoms: 2 3 4 5 15
+
+[13:09:05] SMILES Parse Error: duplicated ring closure 4 bonds atom 19 to itself for input: 'CC(=O)Nc1ccc2c(CCNc3nnc(NC(=O)C44CC5CC(CC(C5)C3)C4)nc3CCCc23)n1'
+[13:09:05] Can't kekulize mol.  Unkekulized atoms: 11 12 13 14 29
+
+[13:09:05] SMILES Parse Error: unclosed ring for input: 'Oc1cccc2c(cc(-c3cccc(OCCF)c4)c(O)c12)-c1ccccc1'
+[13:09:05] Can't kekulize mol.  Unkekulized atoms: 8 9 20 21 22
+
+[13:09:05] Can't kekulize mol.  Unkekulized atoms: 2 3 4 5 6 7 28 29 30 31 32 33 34 35 36
+
+[13:09:05] Can't kekulize mol.  Unkekulized atoms: 14 16 17 18 19 20 21
+
+Using TensorFlow backend.
+100 smiles have been generated in 36.45 s
+There are 93 valid and unique SMILES

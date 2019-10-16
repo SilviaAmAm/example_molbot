@@ -1,0 +1,57 @@
+nohup: ignoring input
+2019-10-16 13:05:16.255384: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-10-16 13:05:16.409819: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-16 13:05:16.410777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:06:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2019-10-16 13:05:16.410793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2019-10-16 13:05:16.632242: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-16 13:05:16.632285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2019-10-16 13:05:16.632291: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2019-10-16 13:05:16.632535: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10407 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:06:00.0, compute capability: 6.1)
+The total number of molecules is: 516 
+
+Train on 513 samples, validate on 3 samples
+Epoch 1/5
+
+ 86/513 [====>.........................] - ETA: 7s - loss: 0.2617
+172/513 [=========>....................] - ETA: 3s - loss: 0.2456
+258/513 [==============>...............] - ETA: 2s - loss: 0.2301
+344/513 [===================>..........] - ETA: 1s - loss: 0.2198
+430/513 [========================>.....] - ETA: 0s - loss: 0.2101
+513/513 [==============================] - 4s 7ms/step - loss: 0.2030 - val_loss: 0.1431
+Epoch 2/5
+
+ 86/513 [====>.........................] - ETA: 1s - loss: 0.1532
+172/513 [=========>....................] - ETA: 1s - loss: 0.1466
+258/513 [==============>...............] - ETA: 1s - loss: 0.1442
+344/513 [===================>..........] - ETA: 0s - loss: 0.1400
+430/513 [========================>.....] - ETA: 0s - loss: 0.1400
+513/513 [==============================] - 2s 4ms/step - loss: 0.1369 - val_loss: 0.1022
+Epoch 3/5
+
+ 86/513 [====>.........................] - ETA: 1s - loss: 0.1102
+172/513 [=========>....................] - ETA: 1s - loss: 0.1154
+258/513 [==============>...............] - ETA: 1s - loss: 0.1132
+344/513 [===================>..........] - ETA: 0s - loss: 0.1128
+430/513 [========================>.....] - ETA: 0s - loss: 0.1127
+513/513 [==============================] - 2s 4ms/step - loss: 0.1113 - val_loss: 0.0871
+Epoch 4/5
+
+ 86/513 [====>.........................] - ETA: 1s - loss: 0.0989
+172/513 [=========>....................] - ETA: 1s - loss: 0.1002
+258/513 [==============>...............] - ETA: 1s - loss: 0.1005
+344/513 [===================>..........] - ETA: 0s - loss: 0.1009
+430/513 [========================>.....] - ETA: 0s - loss: 0.0985
+513/513 [==============================] - 2s 4ms/step - loss: 0.0980 - val_loss: 0.0812
+Epoch 5/5
+
+ 86/513 [====>.........................] - ETA: 1s - loss: 0.0909
+172/513 [=========>....................] - ETA: 1s - loss: 0.0912
+258/513 [==============>...............] - ETA: 1s - loss: 0.0916
+344/513 [===================>..........] - ETA: 0s - loss: 0.0917
+430/513 [========================>.....] - ETA: 0s - loss: 0.0920
+513/513 [==============================] - 2s 4ms/step - loss: 0.0918 - val_loss: 0.0777
+Using TensorFlow backend.
+Transfer learning took 13.29 s
